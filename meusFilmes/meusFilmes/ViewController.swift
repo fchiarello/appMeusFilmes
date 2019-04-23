@@ -67,6 +67,10 @@ class ViewController: UITableViewController {
         celula.tituloLabel.text = filmes.titulo
         celula.descricaoLabel.text = filmes.descricao
         
+        celula.filmeImageView.layer.cornerRadius = 42
+        celula.filmeImageView.clipsToBounds = true
+        
+        
         
         
         
