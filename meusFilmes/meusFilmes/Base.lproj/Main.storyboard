@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -61,6 +62,7 @@
                                     <outlet property="descricaoLabel" destination="LlR-JY-2sl" id="woY-WV-Fbg"/>
                                     <outlet property="filmeImageView" destination="FqX-k7-65k" id="9Zu-L5-GOX"/>
                                     <outlet property="tituloLabel" destination="D8s-fC-y0A" id="QJ9-gL-oNJ"/>
+                                    <segue destination="AjY-2C-Fdr" kind="show" identifier="detalheFilme" id="YjJ-D2-qYO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -74,6 +76,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEO-fT-CqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1045.5999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--Detalhes Filme View Controller-->
+        <scene sceneID="kkc-I7-MUh">
+            <objects>
+                <viewController id="AjY-2C-Fdr" customClass="DetalhesFilmeViewController" customModule="meusFilmes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="11k-PG-3jc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filme2" translatesAutoresizingMaskIntoConstraints="NO" id="08w-HU-ERZ">
+                                <rect key="frame" x="16" y="64" width="343" height="369"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Título" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eST-pN-0tB">
+                                <rect key="frame" x="16" y="441" width="343" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTk-s2-ktT">
+                                <rect key="frame" x="16" y="487" width="336" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="s6y-zg-Wy7"/>
+                    </view>
+                    <connections>
+                        <outlet property="descricaoLabel" destination="BTk-s2-ktT" id="akK-b1-rxf"/>
+                        <outlet property="filmeImageView" destination="08w-HU-ERZ" id="4Y2-eq-glU"/>
+                        <outlet property="tituloLabel" destination="eST-pN-0tB" id="SDx-c2-9yY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d89-se-q10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805.5999999999999" y="131.78410794602701"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="voo-BR-C0z">
@@ -94,4 +136,7 @@
             <point key="canvasLocation" x="106.40000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="filme2" width="252.66667175292969" height="268.33334350585938"/>
+    </resources>
 </document>

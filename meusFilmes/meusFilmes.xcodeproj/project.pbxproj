@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		92011534226F44C700B15797 /* FilmeCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92011533226F44C700B15797 /* FilmeCelula.swift */; };
+		92011536226F567100B15797 /* DetalhesFilmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92011535226F567100B15797 /* DetalhesFilmeViewController.swift */; };
 		92A18A1B226E374C00F82356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A18A1A226E374C00F82356 /* AppDelegate.swift */; };
 		92A18A1D226E374C00F82356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A18A1C226E374C00F82356 /* ViewController.swift */; };
 		92A18A20226E374C00F82356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A18A1E226E374C00F82356 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		92011533226F44C700B15797 /* FilmeCelula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmeCelula.swift; sourceTree = "<group>"; };
+		92011535226F567100B15797 /* DetalhesFilmeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesFilmeViewController.swift; sourceTree = "<group>"; };
 		92A18A17226E374C00F82356 /* meusFilmes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meusFilmes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A18A1A226E374C00F82356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92A18A1C226E374C00F82356 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				92A18A1C226E374C00F82356 /* ViewController.swift */,
 				92A18A2C226E443C00F82356 /* Filmes.swift */,
 				92A18A1E226E374C00F82356 /* Main.storyboard */,
+				92011535226F567100B15797 /* DetalhesFilmeViewController.swift */,
 				92011533226F44C700B15797 /* FilmeCelula.swift */,
 				92A18A21226E375000F82356 /* Assets.xcassets */,
 				92A18A23226E375000F82356 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				92A18A2D226E443C00F82356 /* Filmes.swift in Sources */,
 				92A18A1D226E374C00F82356 /* ViewController.swift in Sources */,
+				92011536226F567100B15797 /* DetalhesFilmeViewController.swift in Sources */,
 				92A18A1B226E374C00F82356 /* AppDelegate.swift in Sources */,
 				92011534226F44C700B15797 /* FilmeCelula.swift in Sources */,
 			);
