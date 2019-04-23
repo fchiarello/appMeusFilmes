@@ -18,12 +18,34 @@ class ViewController: UITableViewController {
     
     var filme: Filme
     
-    filme = Filme(titulo: "Filme 1", descricao: "Descrição 1")
-    Filmes.append(filme)
+        filme = Filme(titulo: "007 - Spectre", descricao: "Descrição 1", imagem: UIImage(imageLiteralResourceName: "filme1"))
+        Filmes.append(filme)
     
-        filme = Filme(titulo: "Filme 2", descricao: "Descrição 2")
+        filme = Filme(titulo: "Star Wars - O Despertar da Força", descricao: "Descrição 2", imagem: UIImage(imageLiteralResourceName: "filme2"))
+        Filmes.append(filme)
+        filme = Filme(titulo: "Impacto Mortal", descricao: "Descrição 3", imagem: UIImage(imageLiteralResourceName: "filme3"))
         Filmes.append(filme)
         
+        filme = Filme(titulo: "Deadpool", descricao: "Descrição 4", imagem: UIImage(imageLiteralResourceName: "filme4"))
+        Filmes.append(filme)
+        
+        filme = Filme(titulo: "O Regresso", descricao: "Descrição 5", imagem: UIImage(imageLiteralResourceName: "filme5"))
+        Filmes.append(filme)
+        
+        filme = Filme(titulo: "A herdeira", descricao: "Descrição 6", imagem: UIImage(imageLiteralResourceName: "filme6"))
+        Filmes.append(filme)
+        
+        filme = Filme(titulo: "Caçadores de emoção", descricao: "Descrição 7", imagem: UIImage(imageLiteralResourceName: "filme7"))
+        Filmes.append(filme)
+        
+        filme = Filme(titulo: "Regresso do mal", descricao: "Descrição 8", imagem: UIImage(imageLiteralResourceName: "filme8"))
+        Filmes.append(filme)
+        
+        filme = Filme(titulo: "Tarzan", descricao: "Descrição 9", imagem: UIImage(imageLiteralResourceName: "filme9"))
+        Filmes.append(filme)
+        
+        filme = Filme(titulo: "Hardcore", descricao: "Descrição 10", imagem: UIImage(imageLiteralResourceName: "filme10"))
+        Filmes.append(filme)
     
     }
     
@@ -42,6 +64,8 @@ class ViewController: UITableViewController {
         let celula = tableView.dequeueReusableCell(withIdentifier: celulaReuso, for: indexPath)
         
         celula.textLabel?.text = filmes.titulo
+        celula.textLabel?.text = filmes.descricao
+        celula.imageView?.image = filmes.imagem
         
         return celula
     }
